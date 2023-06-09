@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+.main{
+    background: rgb(0,0,0);
+    background: linear-gradient(38deg, rgba(0,0,0,1) 15%, rgba(50,40,124,1) 54%, rgba(48,43,198,1) 84%);
+height: 50vw;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.time{
+    font-family: 'Aoboshi One';
+    font-size: 110px;
+    color: rgb(12, 204, 182);
+    text-shadow: 2px 2px 1pc rgb(0, 255, 255);
+    background: rgb(50,44,44);
+    background: linear-gradient(38deg, rgba(50,44,44,1) 34%, rgba(17,9,254,1) 86%);
+    height: 15vw;
+    width: 45vw;
+    border-radius: 25px;
+    border-width: 10px;
+    border-color:  rgb(25, 172, 198);
+    
+   
+
+
+}
+
+.footer{
+    padding-left: 45vw;
+    height: 3vw;
+    background: rgb(0, 0, 0);
+    color: rgb(12, 204, 182);
+    text-shadow: 2px 2px 1pc rgb(0, 255, 255);
+
+}
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css"> 
+    <title> clock </title>
+</head>
+<body>
+
+
+    <section class = "main">
+        
+        
+
+        <div class = "card">
+            
+            <button onclick = "getTime()" class = "time" > Click Me !</button>
+            <script>
+                    setInterval(getTime, 1000);
+                    function getTime(){
+                        let time = document.querySelector('.time');
+                        let currentDate = new Date();
+                        let CurrentHour = currentDate.getHours();
+                        
+                        
+                        console.log(currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds());
+                        switch(CurrentHour){
+                            case 0:
+                                CurrentHour = 12;
+                                break;
+                            case 1:
+                                CurrentHour = 1;
+                                break;
+                            case 2:
+                                CurrentHour = 2;
+                                break;
+                            case 3:
+                                CurrentHour = 3;
+                                break;
+                            case 4:
+                                CurrentHour = 4;
+                                break;
+                            case 5:
+                                CurrentHour = 5;
+                                break;
+                            case 6:
+                                CurrentHour = 6;
+                                break;
+                            case 7: 
+                                CurrentHour = 7;
+                                break;
+                            case 8:
+                                CurrentHour = 8;
+                                break;
+                            case 9: 
+                                CurrentHour = 9;
+                                break;
+                            case 10: 
+                                CurrentHour = 10;
+                                break;
+                            case 11: 
+                                CurrentHour = 11;
+                                break;
+                            case 12: 
+                                CurrentHour = 12;
+                                break;
+                            case 13: 
+                                CurrentHour = 1;
+                                break
+                            case 14: 
+                                CurrentHour = 2;
+                                break;
+                            case 15: 
+                                CurrentHour = 3;
+                                break;
+                            case 16: 
+                                CurrentHour = 4;
+                                break;
+                            case 17:
+                                CurrentHour = 5;
+                                break;
+                            case 18: 
+                                CurrentHour = 6;
+                                break;
+                            case 19: 
+                                CurrentHour = 7;
+                                break;
+                            case 20: 
+                                CurrentHour = 8;
+                                break;
+                            case 21: 
+                                CurrentHour = 9;
+                                break;
+                            case 22: 
+                                CurrentHour = 10;
+                                break;
+                            case 23: 
+                                CurrentHour = 11;
+                                break;
+                            case 24: 
+                                CurrentHour = 12;
+                                break;
+                        }
+
+                        let CurrentMin =  currentDate.getMinutes();
+                        
+                        switch(CurrentMin){
+                            case 0:
+                                CurrentMin = "00";
+                                console.log(CurrentMin);
+                                break;
+                            case 1: 
+                                CurrentMin = "01";
+                                break;
+                            case 2: 
+                                CurrentMin = "02";
+                                break;
+                            case 3: 
+                                CurrentMin = "03";
+                                break;
+                            case 4: 
+                                CurrentMin = "04";
+                                break;
+                            case 5:
+                                CurrentMin = "05";
+                                break;
+                            case 6: 
+                                CurrentMin = "06";
+                                break;
+                            case 7:
+                                CurrentMin = "07";
+                                break;
+                            case 8: 
+                                CurrentMin = "08";
+                                break;
+                            case 9: 
+                                CurrentMin = "09";
+                                break;
+                        }
+                        
+                        console.log(CurrentMin);
+
+                        if(currentDate.getHours() >= 12){
+                        time.innerHTML = CurrentHour + ":" + CurrentMin + " PM ";
+                        }
+                            else {
+                                time.innerHTML = CurrentHour + ":" + CurrentMin +  " AM ";
+                            }   
+                        
+                    }
+            </script>
+            
+        </div>
+        
+
+    </section>
+
+    <div class = "footer">
+        <p> Coded by yours truly , Zubaer</p>
+    </div>
+    
+</body>
+</html>
